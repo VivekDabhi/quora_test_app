@@ -1,0 +1,9 @@
+<div id="<%= dom_id topic %>">
+  <p>
+    <strong>Description:</strong>
+    <%= topic.description %>
+  </p>
+  <p>
+    <%= link_to "Questions", question_path(topic) %>
+  </p>
+</div>

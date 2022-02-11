@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Topics</h1>
+<%= link_to "New topic", new_topic_path %>
+
+<div id="topics">
+<table>
+  <% @topics.each do |topic| %>
+    <tr>
+      <td><%= render topic %></td>
+      <td><%= link_to "Show this topic", topic %></td>
+    </tr>
+  <% end %>
+</table>
+</div>
+

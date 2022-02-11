@@ -1,0 +1,17 @@
+<div id="<%= dom_id question %>">
+  <p>
+    <strong>Topic:</strong>
+    <%= @questions&.first&.topic&.description %>
+  </p>
+
+  <% @questions.each do |question| %>
+    <br/><strong>Questions:</strong>
+    <br/><%= question.description %>
+    <% question.answers.each do |answer| %>
+      <br/><strong>Answers:</strong>
+      <br/><%= answer.description %>
+    <% end %>
+    <br/>
+  <% end %>
+
+</div>
